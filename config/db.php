@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$db   = "np02cs4a240051";   // ✅ UPDATED DATABASE NAME
+$db   = "np02cs4a240051"; 
 $user = "root";
 $pass = "";
 
