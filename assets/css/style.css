@@ -1,0 +1,185 @@
+/* ===== Global ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f3fb;
+    margin: 0;
+    padding: 0;
+    color: #3a2c4d;
+}
+
+/* ===== Header ===== */
+.header {
+    background: linear-gradient(90deg, #6a4c93, #f284b6);
+    color: white;
+    padding: 18px;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+/* ===== Page Container ===== */
+.page {
+    max-width: 1100px;
+    margin: 25px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e3d9f2;
+}
+
+/* ===== Navigation ===== */
+.top-nav {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #6a4c93;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #5a3f80;
+}
+
+/* ===== Section Titles ===== */
+h2 {
+    margin-top: 0;
+    color: #6a4c93;
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #6a4c93;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e6ddf3;
+}
+
+tr:nth-child(even) {
+    background-color: #faf7fd;
+}
+
+/* ===== Stock Highlight ===== */
+.low-stock {
+    color: #d64575;
+    font-weight: bold;
+}
+
+/* ===== Forms ===== */
+.form-box {
+    max-width: 420px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e3d9f2;
+    background-color: #faf7fd;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #cdbfe3;
+    border-radius: 3px;
+}
+
+/* ===== Login ===== */
+.login-box {
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #e3d9f2;
+    background-color: #faf7fd;
+    text-align: center;
+}
+
+.login-box h3 {
+    margin-top: 10px;
+    color: #6a4c93;
+}
+
+.error {
+    color: #d64575;
+    font-size: 13px;
+}
+
+/* ===== Action Buttons ===== */
+.btn-edit {
+    background-color: #7b5ea7;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.btn-edit:hover {
+    background-color: #6a4c93;
+}
+
+.btn-delete {
+    background-color: #d64575;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.btn-delete:hover {
+    background-color: #b73763;
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #6a4c93;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* ===== Center Navigation ===== */
+.top-nav.center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Order Success Message ===== */
+.success-box {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #e3d9f2;
+    background-color: #faf7fd;
+    text-align: center;
+}
+
+.success-box h2 {
+    color: #6a4c93;
+    margin-bottom: 10px;
+}
+
+.success-box p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
