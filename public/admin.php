@@ -13,8 +13,8 @@ $products = $stmt->fetchAll();
     <a href="add.php"><button>Add Product</button></a>
     <a href="logout.php"><button>Logout</button></a>
 </div>
-
-<table>
+<button onclick="loadStock()">Refresh Stock (Ajax)</button>
+<table id="stockTable">
 <tr>
     <th>Name</th>
     <th>Stock</th>
@@ -39,5 +39,5 @@ $products = $stmt->fetchAll();
 </tr>
 <?php endforeach; ?>
 </table>
-
+<script src="../assets/js/ajax_stock.js"></script>
 <?php include '../includes/footer.php'; ?>
