@@ -5,9 +5,9 @@ include '../includes/header.php';
 $query = "SELECT * FROM products WHERE 1";
 $params = [];
 
-if (!empty($_GET['supplier'])) {
-    $query .= " AND supplier LIKE ?";
-    $params[] = "%" . $_GET['supplier'] . "%";
+if (!empty($_GET['product'])) {
+    $query .= " AND product_name LIKE ?";
+    $params[] = "%" . $_GET['product'] . "%";
 }
 
 if (!empty($_GET['max_price'])) {
@@ -26,8 +26,9 @@ $results = $stmt->fetchAll();
 
 <div class="form-box">
 <form method="get">
-    <label>Supplier:</label>
-    <input type="text" name="supplier">
+    <label>Product:</label>
+    <input type="text" name="product" id="productInput" autocomplete="off">
+    <div id="suggestions"></div>
 
     <label>Max Price:</label>
     <input type="number" step="1" name="max_price">
@@ -37,6 +38,13 @@ $results = $stmt->fetchAll();
 </div>
 
 <table>
+<tr>
+    <th>Product</th>
+    <th>Supplier</th>
+    <th>Price</th>
+    <th>Stock</th>
+</tr>
+
 <?php foreach ($results as $r): ?>
 <tr>
     <td><?= htmlspecialchars($r['product_name']) ?></td>
@@ -47,4 +55,5 @@ $results = $stmt->fetchAll();
 <?php endforeach; ?>
 </table>
 
+<script src="../assets/js/ajax_search.js"></script>
 <?php include '../includes/footer.php'; ?>

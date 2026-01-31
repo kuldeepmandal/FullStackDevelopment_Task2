@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-/* Hashed password for admin123 */
-$storedHash = '$2y$10$tknVt4/Lego8EudIk45Aw./LCrWHI8eGn5NrGpuTV2feQtxf8n/ci';
+/* Hashed password for cool123 */
+$storedHash = '$2y$10$q6NvJPHbTgsAgm/2NogU3.CVTFBz4h2i4TTlQjCysxE77dVHWX6mK';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
