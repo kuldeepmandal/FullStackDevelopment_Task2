@@ -17,13 +17,14 @@ Password: cool123
 
 ---
 
-## Setup Instructions
-1. Install XAMPP and start Apache & MySQL
-2. Create database `np02cs4a240051` in phpMyAdmin
-3. Import the `products` table
-4. Place the project folder inside `htdocs`
-5. Open:
-   http://localhost/inventory_management/public/index.php
+## Setup Instructions (College Server)
+
+1. Log in to the college student server using the provided FTP or file manager.
+2. Upload the project folder to your public web directory (e.g. `public_html`).
+3. Create a MySQL database named: np02cs4a240051
+4. Import the `products` table using phpMyAdmin on the college server.
+5. Update database credentials in: config/db.php
+6. Access the website using the provided student server URL
 
 ---
 
