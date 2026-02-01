@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <button onclick="window.location.href='admin.php'">
     Back to Admin Panel
 </button>
-
+<br><br>
 <form method="post">
     <label>Product Name:</label><br>
     <input type="text" name="product_name" required><br>
