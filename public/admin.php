@@ -11,10 +11,10 @@ $products = $stmt->fetchAll();
 
 <div class="top-nav">
     <a href="add.php"><button>Add Product</button></a>
+    <button onclick="loadStock()">Refresh Stock (Ajax)</button>
     <a href="logout.php"><button>Logout</button></a>
 </div>
-<button onclick="loadStock()">Refresh Stock (Ajax)</button>
-<table id="stockTable">
+    <table id="stockTable">
 <tr>
     <th>Name</th>
     <th>Stock</th>

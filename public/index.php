@@ -7,8 +7,8 @@ $products = $stmt->fetchAll();
 ?>
 
 <div class="top-nav">
-    <a href="search.php"><button>Search</button></a>
     <a href="login.php"><button>Admin Login</button></a>
+    <a href="search.php"><button>Search</button></a>
 </div>
 
 <table>
