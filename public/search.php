@@ -2,13 +2,13 @@
 require '../config/db.php';
 include '../includes/header.php';
 
-/* Initialize results to avoid warnings */
+/* Initialize results to avoid warning */
 $results = [];
 
 $query = "SELECT * FROM products WHERE 1";
 $params = [];
 
-/* Product name filter */
+/* Product name filterr */
 if (!empty($_GET['product'])) {
     $query .= " AND product_name LIKE ?";
     $params[] = "%" . $_GET['product'] . "%";
